@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { formatter } from "../utils/helper";
-import ProductOptions from "./ProductOptions.tsx";
+import ProductOptions from "./ProductOptions";
 
 export default function ProductForm({ product }) {
   const allVariantOptions = product.variants.edges?.map((variant) => {
