@@ -1,20 +1,16 @@
-import ProductPageContent from "../../components/ProductPageContent.tsx";
-import { getAllProducts, getProduct } from "../../lib/shopify";
+import ProductPageContent from "../components/ProductPageContent";
+import { getAllProducts, getProduct } from "../lib/shopify";
 
 export default function ProductPage({ product }) {
-  return (
-    <div className="min-h-screen py-12 sm:pt-20 ">
-      <ProductPageContent product={product} />
-    </div>
-  );
+  return <div className="min-h-screen py-12 sm:pt-20 ">{product.title}</div>;
 }
 
 export async function getStaticPaths() {
   const products = await getAllProducts();
   const paths = products.map((item) => {
-    const product = String(item.node.handle);
+    const handle = String(item.node.handle);
     return {
-      params: { product },
+      params: { product: handle },
     };
   });
   return {
