@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard.tsx";
+import ProductCard from "./ProductCard";
 
 const ProdcutsList = ({ products }) => {
   return (

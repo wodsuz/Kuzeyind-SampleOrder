@@ -1,7 +1,7 @@
 import Headtitle from "../components/header";
-import Topbanner from "../components/Topbanner.tsx";
+import Topbanner from "../components/Topbanner";
 import { getProductsinCollection } from "../lib/shopify";
-import ProdcutsList from "../components/ProdcutsList.tsx";
+import ProdcutsList from "../components/ProdcutsList";
 
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const URL = `https://${domain}/api/2022-01/graphql.json`;

@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import { date } from "../components/time.tsx";
+import { date } from "../components/time";
 const Headtitle = () => {
   const title =
     "Kuzeyind. © Export & Import" +
