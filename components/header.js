@@ -3,9 +3,9 @@ import Head from "next/head";
 import { date } from "../components/time";
 const Headtitle = () => {
   const title =
-    "Kuzeyind. © Export & Import" +
+    "Kuzeyind. © Export & Import - " +
     date() +
-    "- Sample Fruit & Disposable Medical Products Order Site";
+    "- Sample Fruit & Disposable Medical Products Order Webpage";
   return (
     <div>
       <Head>
