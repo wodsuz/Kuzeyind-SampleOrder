@@ -2,7 +2,7 @@ import { date } from "../components/time";
 
 const navigation = [
   {
-    name: "OngunDemirag",
+    name: "Ongun Demirag",
     href: "https://www.ongundemirag.com",
   },
   { name: "E-mail", href: "mailto:ongun.demirag@gmail.com" },
