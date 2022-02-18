@@ -3,10 +3,11 @@ import ProductForm from "./ProductForm";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import RecommenList from "./RecommendedList";
+import parse from "html-react-parser";
 
 export default function ProductPageContent({ product }) {
   const images = [];
-
+  console.log(product.descriptionHtml);
   product.images.edges.map((image, i) => {
     images.push(
       <SwiperSlide key={`slide-${i}`}>
@@ -28,7 +29,7 @@ export default function ProductPageContent({ product }) {
         className="flex flex-col justify-center items-center space-y-8 md:flex-row 
     md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto"
       >
-        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg md:w-1/2">
+        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-xl md:w-1/2">
           <div className="relative h-96 w-full">
             <Swiper
               style={{
@@ -46,8 +47,8 @@ export default function ProductPageContent({ product }) {
         </div>
         <ProductForm product={product} />
       </div>
-      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">
-        {product.description}
+      <p className="text-lg pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto text-center">
+        {parse(product.descriptionHtml)}
       </p>
       <RecommenList
         current={product.id}
