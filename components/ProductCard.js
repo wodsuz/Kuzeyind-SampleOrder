@@ -9,12 +9,16 @@ const ProductCard = ({ product }) => {
     <Link href={`/products/${handle}`}>
       <a className="group">
         <div className="w-full bg-gray-500 rounded-3xl overflow-hidden">
-          <div className="relative group-hover:opacity-75 h-72">
+          <div className="relative group-hover:opacity-75 dark:group-hover:opacity-50 h-72">
             <Image src={url} alt={altText} layout="fill" objectFit="cover" />
           </div>
         </div>
-        <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
-        <p className="mt-1 text-sm text-gray-700">{formatter.format(price)}</p>
+        <h3 className="mt-4 dark:text-primary  text-lg underline md:text-xl decoration-1 decoration-sky-500">
+          {title}
+        </h3>
+        <p className="mt-1 text-sm dark:text-primary ">
+          {formatter.format(price)}
+        </p>
       </a>
     </Link>
   );
