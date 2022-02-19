@@ -7,7 +7,6 @@ import parse from "html-react-parser";
 
 export default function ProductPageContent({ product }) {
   const images = [];
-  console.log(product.descriptionHtml);
   product.images.edges.map((image, i) => {
     images.push(
       <SwiperSlide key={`slide-${i}`}>
