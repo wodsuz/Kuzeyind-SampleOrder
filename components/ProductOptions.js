@@ -7,8 +7,8 @@ export default function ProductOptions({
   setOptions,
 }) {
   return (
-    <fieldtest className="mt-3">
-      <legened className="text-xl font-semibold">{name}</legened>
+    <fieldset className="mt-3">
+      <legend className="text-xl font-semibold">{name}</legend>
       <div className="inline-flex items-center flex-wrap">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
@@ -39,6 +39,6 @@ export default function ProductOptions({
           );
         })}
       </div>
-    </fieldtest>
+    </fieldset>
   );
 }

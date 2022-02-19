@@ -67,7 +67,9 @@ export default function ProductForm({ product }) {
         onClick={() => {
           addToCart(selectedVariant);
         }}
-        className=" bg-black dark:bg-primary dark:text-dark-300 dark:hover:bg-gray-400 drounded-lg text-white px-2 py-3 hover:bg-gray-800"
+        className=" bg-green-500 dark:bg-primary 
+        dark:text-dark-300 dark:hover:bg-gray-400 rounded-lg 
+        text-white px-2 py-3 hover:bg-green-800"
       >
         Add To Card
       </button>
