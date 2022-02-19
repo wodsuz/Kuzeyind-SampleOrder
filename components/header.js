@@ -20,9 +20,9 @@ const Headtitle = () => {
           content="Fresh fruit,Fresh Vegetables,Dried fruits,Powders,Freeze-Dried Powders,Concentrates,Spray-Dried Powders,%100 Powders,Disposable Medical products"
         />
         <meta charSet="UTF-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpequiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
-          http-equiv="Content-Type"
+          httpequiv="Content-Type"
           content="text/html; charset=ISO-8859-1"
         />
         <meta
