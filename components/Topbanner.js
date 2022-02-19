@@ -21,11 +21,11 @@ import { GiFruitBowl, GiMedicalDrip } from "react-icons/gi";
 const Topbanner = () => {
   const logo = require("../public/logonew2.jpg");
   return (
-    <div className="flex items-center justify-center mx-auto overflow-hidden relative bg-secondary dark:bg-dark-100 dark:text-primary ">
+    <div className="flex items-center justify-center mx-auto overflow-hidden relative text-dark-100 bg-secondary dark:bg-dark-100 dark:text-primary ">
       <div className="relative opacity-20 lg:opacity-100 h-60 w-60 mt-2 ">
         <Image
           src={logo}
-          alt={"altText"}
+          alt={"biggericon"}
           layout="fill"
           objectFit="cover"
           className="rounded-full"

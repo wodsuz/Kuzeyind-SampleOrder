@@ -12,13 +12,39 @@ const Headtitle = () => {
         <meta name="author" content="Ongun-Demirag" key="title" />
         <meta
           name="description"
-          content="Web page to order sample food and disposable medical products online."
+          content="Web page to order sample food and disposable medical products online. Order fresh fruit and vegetables 
+          samples. Order fruit powders and concentrates. Order dried sliced fruits and much more."
         />
         <meta
-          name="keywords"
+          name="keywords  "
           content="Fresh fruit,Fresh Vegetables,Dried fruits,Powders,Freeze-Dried Powders,Concentrates,Spray-Dried Powders,%100 Powders,Disposable Medical products"
         />
         <meta charSet="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          http-equiv="Content-Type"
+          content="text/html; charset=ISO-8859-1"
+        />
+        <meta
+          property="og:title"
+          content="Kuzey ind Order fruit, vegetable and medical disposables"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://kuzeyind-sample-order.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://kuzeyind-sample-order.vercel.app/logo.jpg"
+        />
+        <meta
+          property="og:description"
+          content="Web page to order sample food and disposable medical products online. Order fresh fruit and vegetables 
+          samples. Order fruit powders and concentrates. Order dried sliced fruits and much more."
+        />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:site_name" content="Kuzey Ind. Order" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <link rel="manifest" href="/manifest.json" />

@@ -43,7 +43,7 @@ const Nav = () => {
             <a className="cursor-pointer">
               <Image
                 src={logo}
-                alt={"altText"}
+                alt={"topicon"}
                 layout="fixed"
                 objectFit="cover"
                 className="rounded-full"
@@ -56,7 +56,9 @@ const Nav = () => {
             </a>
           </Link>
           <div>
-            <button onClick={changeTheme}>{icon}</button>
+            <button onClick={changeTheme} aria-label="theme change">
+              {icon}
+            </button>
           </div>
           <div className="dark:text-primary align-top pb-2 text-md md:text-lg  ">
             <a
