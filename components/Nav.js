@@ -61,13 +61,13 @@ const Nav = () => {
             </button>
           </div>
           <div className="dark:text-primary align-top pb-2 text-md md:text-lg  ">
-            <a
-              className="tet-md font-bold cursor-pointer  flex"
+            <span
+              className="tet-md font-bold cursor-pointer flex"
               onClick={() => setCartOpen(!cartOpen)}
             >
               <BsCart className="w-7 h-7 md:w-10 md:h-10 items-center justify-center mr-2 red-400 " />
               Cart ({cartQuantity})
-            </a>
+            </span>
             <MiniCart cart={cart} />
           </div>
         </div>
