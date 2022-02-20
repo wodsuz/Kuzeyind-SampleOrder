@@ -4,17 +4,6 @@ import { useTheme } from "next-themes";
 import { useContext } from "react";
 import { CartContext } from "../context/shopContext";
 import MiniCart from "./MiniCart";
-import { MdEmail, MdLocationPin } from "react-icons/md";
-import { RiMouseFill } from "react-icons/ri";
-import {
-  FaLinkedinIn,
-  FaGoogle,
-  FaYandex,
-  FaWhatsapp,
-  FaGoogleDrive,
-  FaInstagram,
-} from "react-icons/fa";
-import { GiFruitBowl, GiMedicalDrip } from "react-icons/gi";
 import { BsFillSunFill, BsCart, BsMoonFill } from "react-icons/bs";
 
 const Nav = () => {
@@ -65,7 +54,7 @@ const Nav = () => {
               className="tet-md font-bold cursor-pointer flex"
               onClick={() => setCartOpen(!cartOpen)}
             >
-              <BsCart className="w-7 h-7 md:w-10 md:h-10 items-center justify-center mr-2 red-400 " />
+              <BsCart className="w-7 h-7 md:w-10 md:h-10 items-center justify-center mr-2" />
               Cart ({cartQuantity})
             </span>
             <MiniCart cart={cart} />

@@ -29,8 +29,8 @@ export default function ProductOptions({
               <div
                 className={`p-2 my-3 text-md rounded-full block cursor-pointer mr-3 ${
                   checked
-                    ? "text-white bg-gray-900"
-                    : "text-gray-900 bg-gray-200"
+                    ? "text-white bg-black dark:bg-primary dark:text-dark-300" // selected
+                    : "text-dark-300 bg-primary dark:bg-dark-200 dark:text-primary" // non
                 }  `}
               >
                 <span className="px-2">{value}</span>

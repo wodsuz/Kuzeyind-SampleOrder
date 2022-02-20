@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { formatter } from "../utils/helper";
 import ProductOptions from "./ProductOptions";
 import { CartContext } from "../context/shopContext";
+import { BsCart } from "react-icons/bs";
 
 export default function ProductForm({ product }) {
   const { addToCart } = useContext(CartContext); // Destructing to add in function
@@ -51,7 +52,7 @@ export default function ProductForm({ product }) {
   return (
     <div className="rounded-2xl p-4 shadow-2xl flex flex-col w-full md:w-1/3">
       <h2 className="text-2xl font-bold">{product.title}</h2>
-      <span className="pb-6">
+      <span className="pb-1 ">
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
       {product.options.map(({ name, values }) => (
@@ -67,11 +68,12 @@ export default function ProductForm({ product }) {
         onClick={() => {
           addToCart(selectedVariant);
         }}
-        className=" bg-green-500 dark:bg-primary 
-        dark:text-dark-300 dark:hover:bg-gray-400 rounded-lg 
-        text-white px-2 py-3 hover:bg-green-800"
+        className=" bg-green-500 dark:bg-primary flex items-center justify-center
+        dark:text-dark-300 dark:hover:bg-gray-400 rounded-2xl 
+        text-white px-2 py-3 hover:bg-green-800 mt-2"
       >
-        Add To Card
+        <BsCart className="w-5 h-5 mr-3" />
+        Add To Card <BsCart className="w-5 h-5 ml-3" />
       </button>
     </div>
   );
