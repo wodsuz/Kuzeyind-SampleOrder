@@ -9,11 +9,13 @@ import React, { useState } from "react";
 export default function ProductPageContent({ product }) {
   const images = [];
   const [className, setClassName] = useState("invisible");
-  const [toggleClass, setToggleClass] = useState(" h-14 w-full  ");
+  const [toggleClass, setToggleClass] = useState(
+    " h-14 w-full dark:bg-dark-100  "
+  );
   const myClick = () => {
     className.includes("invisible")
-      ? setClassName("visible dark:text-primary dark:bg-dark-300") +
-        setToggleClass("relative h-72 w-full bg-secondary overflow-auto")
+      ? setClassName("visible dark:text-primary dark:bg-dark-100 ml-3") +
+        setToggleClass("relative h-72 w-full dark:bg-dark-100 overflow-auto")
       : setClassName("invisible") + setToggleClass(" h-14 w-full  ");
   };
 
@@ -38,7 +40,7 @@ export default function ProductPageContent({ product }) {
         className="flex flex-col justify-center items-center md:flex-row 
     md:items-start md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto"
       >
-        <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-xl md:w-1/2">
+        <div className="w-full max-w-md bg-white dark:bg-dark-100 rounded-2xl overflow-hidden shadow-xl md:w-1/2">
           <div className="relative h-96 w-full">
             <Swiper
               style={{
